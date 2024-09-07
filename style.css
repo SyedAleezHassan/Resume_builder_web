@@ -80,8 +80,18 @@ h2 {
 }
 
 ul {
-    list-style: none;
+    /* list-style: none; */
+    margin-left: 10px;
 }
+.main_heading {
+    text-align: center;
+    font-family: 'Lobster', cursive; /* Replace 'Lobster' with your desired font */
+    font-size: 36px;
+    color: #273447; /* Replace with your preferred color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    animation: bounce 1s infinite;
+  }
 
 ul li {
     font-size: 14px;
