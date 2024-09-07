@@ -3,6 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic CV Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- cv foerm -->
+        <form id="cv-form" class="cv-form">
+            <h1>Create Your CV</h1>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Enter your address" required>
+            </div>
+            <div class="form-group">
+                <label for="about">About Me</label>
+                <textarea id="about" placeholder="Describe yourself" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience</label>
+                <textarea id="experience" placeholder="List your work experience" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="education">Education</label>
+                <textarea id="education" placeholder="Enter your education history" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea id="skills" placeholder="List your skills" required></textarea>
+            </div>
+            <button type="submit">Generate CV</button>
+        </form>
+
+        <!-- show dynanic generated cv -->
+        <div id="cv-display" class="cv-display" style="display: none;">
+            <div class="cv-header">
+                <h1 id="cv-name"></h1>
+                <p id="cv-email"></p>
+                <p id="cv-phone"></p>
+                <p id="cv-address"></p>
+            </div>
+            <div class="cv-section">
+                <h2>About Me</h2>
+                <p id="cv-about"></p>
+            </div>
+            <div class="cv-section">
+                <h2>Experience</h2>
+                <p id="cv-experience"></p>
+            </div>
+            <div class="cv-section">
+                <h2>Education</h2>
+                <p id="cv-education"></p>
+            </div>
+            <div class="cv-section">
+                <h2>Skills</h2>
+                <p id="cv-skills"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Syed Aleez Hassan</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -22,7 +107,7 @@
 
             <div class="contact-info">
                 <p><i class="fas fa-phone"></i> +92 317-2935697</p>
-                <p id="emaillink"><i class="fas fa-envelope"></i> <a href="#" id="email">syedaleezhassan@gmail.com</a></p>
+                <p id="email-link"><i class="fas fa-envelope"></i> <a href="#" id="email">syedaleezhassan@gmail.com</a></p>
                 <p><i class="fas fa-home"></i> R-196 Rafi Banglows Malir Karachi</p>
             </div>
 
@@ -55,8 +140,8 @@
                 <ul>
                     <li>4.5 Years as a Freelancer</li>
                     <li>4 years in Learner’s Academy as a teacher.</li>
-                    <!-- <li>3 Months in Hello International Call Center (DME).</li> -->
-                    <!-- <li>Sales Experience as an Entrepreneur.</li> -->
+                     <li>3 Months in Hello International Call Center (DME).</li> 
+                    <li>Sales Experience as an Entrepreneur.</li> 
                 </ul>
             </div>
 
@@ -88,63 +173,4 @@
         </div>
     </div>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Builder</title>
-    <link rel="stylesheet" href="style.css">
-
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
-
-
-<body>
-    <h1>This is Resume builder</h1> <br>
-    <div>
-        <img src="https://via.placeholder.com/200" alt="Profile Picture">
-    </div>
-
-    <h2>About Me</h2>
-    <div class = 'aboutMe_div'>
-      <h4>I am Syed Aleez Hassan, a passionate SE highlt motivated and a skilfull Flutter Developer</h4>
-    </div>
-<br>
-    <div class="icon-text">
-        <i class="bi bi-telephone-fill"></i> +92 317-2935697 <br>
-        <i class="bi bi-envelope"></i> syedaleezhassan@gmail.com <br>
-        <i class="bi bi-house"></i> R-196 Rafi Banglows Karachi
-
-    </div> <br>
-    <div>
-        <h2>Language <br></h2> 
-        <h4>English <br> Urdu</h4> 
-        
-
-    </div>
-   
-    
-</body>
-</html> -->
-
+</html>  -->

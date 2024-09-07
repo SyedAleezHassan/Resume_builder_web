@@ -1,145 +1,103 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
 }
 
 .container {
-    display: flex;
-    max-width: 900px;
-    margin: 50px auto;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.left-column {
-    background-color: #273447;
-    color: #fff;
-    padding: 20px;
-    width: 38%;
-    text-align: center;
-}
-
-.right-column {
-    padding: 20px;
-    width: 55%;
-}
-
-.profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 80%;
     margin: 0 auto;
-}
-
-.profile-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 24px;
-    margin-top: 15px;
-}
-
-.about-me {
-    font-size: 14px;
-    margin-top: 10px;
-    color: #ddd;
-}
-
-.contact-info {
-    margin-top: 20px;
-}
-
-.contact-info p {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.contact-info i {
-    margin-right: 10px;
-}
-
-.language-section, .expertise-section {
-    margin-top: 20px;
-    text-align: left;
-}
-
-h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-ul {
-    /* list-style: none; */
-    margin-left: 10px;
-}
-.main_heading {
+    color: #333;
     text-align: center;
-    font-family: 'Lobster', cursive; /* Replace 'Lobster' with your desired font */
-    font-size: 36px;
-    color: #273447; /* Replace with your preferred color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    letter-spacing: 2px;
-    animation: bounce 1s infinite;
-  }
-
-ul li {
-    font-size: 14px;
-    margin-bottom: 5px;
 }
 
-.right-column .section {
-    margin-bottom: 30px;
+.cv-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.skills-summary {
-    margin-top: 30px;
-}
-
-.skill-bar {
+.form-group {
     margin-bottom: 15px;
 }
 
-.progress-bar {
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 10px;
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input, 
+.form-group textarea {
     width: 100%;
-    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
 }
 
-.progress {
-    background-color: #273447;
-    height: 100%;
-    border-radius: 10px;
+.form-group textarea {
+    height: 100px;
 }
 
-
-
-
-
-
-/* .aboutMe_div{
-    width: 150px;
-    height: 150px;
-    border: 2px, solid,#333;
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
 }
-.call_Icon{
-    display: flex;
-} */
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.cv-display {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-header {
+    text-align: center;
+}
+
+.cv-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.cv-header p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.cv-section {
+    margin-top: 20px;
+}
+
+.cv-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cv-section p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
